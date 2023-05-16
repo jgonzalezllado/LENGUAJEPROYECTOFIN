@@ -1,0 +1,18 @@
+{
+  "productos": [
+    {
+      "nombre": "Juana",
+      "descripcion": "hola",
+      "precio": "2232",
+      "cantidad": "2",
+      "id": 9
+    },
+    {
+      "nombre": "sdgfd",
+      "descripcion": "dsfsd",
+      "precio": "343",
+      "cantidad": "333",
+      "id": 10
+    }
+  ]
+}

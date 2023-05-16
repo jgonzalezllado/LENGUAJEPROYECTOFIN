@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario informático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="general">
+  <h1>Gestión de inventario</h1>
+ 
+ 
+  <form id="formulario">
+    <label id = "añadir">Añadir producto</label>
+    <label for="nombre">Nombre del producto:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <label for="descripcion">Descripción del producto:</label>
+    <textarea id="descripcion" name="descripcion"></textarea>
+    <br>
+    <label for="precio">Precio del producto:</label>
+    <input type="number" id="precio" name="precio" required>
+    <br>
+    <label for="cantidad">Cantidad disponible:</label>
+    <input type="number" id="cantidad" name="cantidad" required>
+    <br>
+    <button id="btn-add" type="button">Añadir producto</button>
+  
+   
+  </form>
+  <br>
+  <section>
+  <form id="formulario-consulta">
+    <div id ="regis">
+    <label for="nombre-consultar">Registro de inventario:</label>
+    </div>
+    <input type="text" id="nombre-consultar" name="nombre-consultar" required>
+    <br>
+    <button id="btn-consultar" type="button">Consultar producto</button>
+    <button id="btn-consultar-todo" type="button">Consultar inventario</button>
+    <div style="overflow:auto;">
+    <table id="tabla-inventario">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <button id="refrescar" type="button" onClick="window.location.reload()">Actualizar</button>
+   
+      </tbody>
+    </table>
+    
+    </div>
+
+  <br>
+</form>
+
+</section>
+</div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
+cls
